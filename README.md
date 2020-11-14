@@ -4,13 +4,13 @@
 ## Peer-graded Assignment: Bash, Make, Git, and GitHub
 
 
-**File:** `guessinggame.sh`
+**File:** [guessinggame.sh](https://github.com/yatzil6/guessing-game)
 
 **Make date**: Sat Nov 14 23:23:10 UTC 2020
 
-**Number of lines in `guessinggame.sh`:** 33
+**Number of lines in [guessinggame.sh](https://github.com/yatzil6/guessing-game):** 33
 
-**Description**: The `guessinggame.sh` is a program that continuously ask the user to guess the number of files in the current directory, until the user guess the correct number.
+**Description**: The [guessinggame.sh](https://github.com/yatzil6/guessing-game) is a program that continuously ask the user to guess the number of files in the current directory, until the user guess the correct number.
 
 The user is informed if their guess is too high or too low, when the user guesses the correct number of files, they are congratulated and the program list the avaliable files in the current directory.
 
