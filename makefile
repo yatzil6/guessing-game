@@ -7,10 +7,10 @@ README.md: guessinggame.sh
     ## Peer-graded Assignment: Bash, Make, Git, and GitHub
     ' >> README.md
     
-    echo $'\n**File:** `guessinggame.sh`' >> README.md
+    echo $'\n**File:** [guessinggame.sh](https://github.com/yatzil6/guessing-game)' >> README.md
     echo -n $'\n**Make date**: ' >> README.md
     date >> README.md
-    echo -n $'\n**Number of lines in `guessinggame.sh`:** ' >> README.md
+    echo -n $'\n**Number of lines in [guessinggame.sh](https://github.com/yatzil6/guessing-game):** ' >> README.md
     grep -c '' guessinggame.sh >> README.md
     
     echo $'\n
