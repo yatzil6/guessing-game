@@ -2,12 +2,21 @@
 
 # FUNCTIONS
 function ask_number_of_files {
-	# GET NUMBER OF FILES ON CURRENT DIRECTORY
-	let n_files=$(ls -1 | wc -l)
+	# GET NUMBER OF FILES ON CURRENT DIRECTORY (HIDDEN INCLUDED)
+	let n_files=$(ls -A -1 | wc -l)
+	
 	# ASK NUMBER OF FILE TO USER
 	echo "***************"
 	echo "** Guess the number of files in the current directory:"
 	read n_files_guess
+	
+	if [[ $n_files_guess =~ ^[0-9]+$ ]]
+	then
+		return $n_files_guess
+	else
+		echo $'\n-----> Please only integers are allowed!!\n'
+		ask_number_of_files
+	fi
 }
 
 # MAIN PROCEDURE
@@ -29,5 +38,5 @@ do
 done
 
 echo $'\n** WELL DONE!!' $n_files $'file(s) is the correct answer, here is the list of files:\n'
-echo "---" && ls -1
+echo "---" && ls -A -1
 echo "***************"
